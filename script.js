@@ -3,9 +3,11 @@ const newGridBtn = document.querySelector(".new-grid");
 newGridBtn.addEventListener("click", () => {
   let gridSideLength = +prompt("Enter the length of each side of the grid (up to 100):", 16);
 
-  gridSideLength = (gridSideLength < 100) ? gridSideLength : 100;
-
-  createGrid(gridSideLength);
+  if (gridSideLength) {
+    gridSideLength = (gridSideLength < 100) ? gridSideLength : 100;
+    
+    createGrid(gridSideLength);
+  }
 })
 
 createGrid(16);

@@ -50,8 +50,10 @@ button.new-grid {
 }
 
 .grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 512px;
   height: 512px;
-  border: 1px solid var(--black);
   background-color: #FFFFFF;
 }

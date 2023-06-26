@@ -11,6 +11,10 @@ function populateGrid(number) {
       square.style.width = `${gridWidth / number}px`
       square.style.height = `${gridHeight / number}px`;
 
+      square.addEventListener("mouseover", (e) => {
+        e.target.style.backgroundColor = "#000000";
+      })
+
       grid.appendChild(square);
     }
   }

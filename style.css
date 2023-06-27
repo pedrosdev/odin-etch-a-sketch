@@ -41,13 +41,18 @@ header h1 {
   text-shadow: 2px 2px 5px #800101;
 }
 
+button {
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 button.new-grid {
   border: 4px solid #e4e4e4;
   border-radius: 8px;
   padding: 8px 16px;
   box-shadow: 2px 2px 4px #800101;
   background-color: #ffffff;
-  font-weight: 700;
 }
 
 .grid-container {
@@ -74,10 +79,10 @@ button.new-grid {
   background-color: #ffffff;
 }
 
-.controllers .left {
+.controllers .black {
   margin-left: -76px;
 }
 
-.controllers .right {
+.controllers .rainbow {
   margin-right: -76px;
 }
